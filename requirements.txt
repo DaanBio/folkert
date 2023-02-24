@@ -3,4 +3,3 @@ pandas==1.5.2
 pyxlsb==1.0.10
 stqdm==0.0.5
 streamlit==1.19.0
-~treamlit==1.15.2
