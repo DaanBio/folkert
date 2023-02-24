@@ -42,9 +42,7 @@ temperature=st.number_input('temperatuur waarde (tussen 0 en 1)', min_value=0., 
 excel_file=st.file_uploader('Upload hier je excel file')
 
 if excel_file:
-    df=pd.read_excel(excel_file, header=None)
-    df=pd.DataFrame(df.iloc[:, 1])
-    df = df.rename({1: 'prompts'}, axis=1)
+    df=pd.read_excel(excel_file)
 
     if st.button("Run ▶"):
         story_list=[]
